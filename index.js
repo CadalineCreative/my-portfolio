@@ -21,6 +21,25 @@ document.addEventListener('DOMContentLoaded',()=>{
     document.getElementById('home').classList.add('active');
   });
 
+
+
+
+
+
+
+  const hamburger = document.getElementById('hamburger');
+const dropdownMenu = document.getElementById('dropdownMenu');
+
+hamburger.addEventListener('click', () => {
+  dropdownMenu.classList.toggle('open');
+});
+
+// Optional: close menu if you click outside
+dropdownMenu.addEventListener('click', (e) => {
+  if (e.target === dropdownMenu) {
+    dropdownMenu.classList.remove('open');
+  }
+});
   document.getElementById('year').textContent = new Date().getFullYear();
 
   // Background slideshow
