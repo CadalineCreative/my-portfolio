@@ -3,79 +3,29 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cadaline — Design & Build</title>
-<link rel="stylesheet" href="styles.css">
+<title>Cadaline</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; /* light background for visibility */
+    display: flex;
+    justify-content: center; /* horizontal centering */
+    align-items: center;     /* vertical centering */
+    height: 100vh;           /* full viewport height */
+  }
+
+  .title {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    /* optional: adjust width for 49% from left/right */
+    width: 2%; /* placeholder, can adjust later if needed */
+  }
+</style>
 </head>
 <body>
-
-<header>
-  <div class="brand" id="homeLink">Cadaline</div>
-  <button class="hamburger" id="hamburger">☰</button>
-  <nav class="nav-menu" id="navMenu">
-    <ul>
-      <li><a href="#" data-section="autocadd">AutoCADD</a></li>
-      <li><a href="#" data-section="webdesign">WebDesign</a></li>
-    </ul>
-  </nav>
-</header>
-
-<main>
-  <section class="section hero active" id="home">
-    <div class="overlay"></div>
-    <div class="hero-content">
-      <h1>Cadaline</h1>
-      <p class="sub">Digital & Physical Spaces Designed</p>
-      <p class="desc">We craft precise CAD drawings and elegant web experiences — ready to build, ready to launch.</p>
-    </div>
-  </section>
-
-  <section class="section" id="autocadd">
-    <h2>AutoCADD Projects</h2>
-    <div class="gallery">
-      <div class="card">
-        <img src="https://source.unsplash.com/600x400/?architecture,blueprint" alt="Sample CAD/Architecture image">
-        <h3>Residential Layouts</h3>
-        <p>Floor plans and elevations for home remodel projects.</p>
-      </div>
-      <div class="card">
-        <img src="https://source.unsplash.com/600x400/?construction,plans" alt="Sample CAD/Planning image">
-        <h3>Commercial Fit‑Outs</h3>
-        <p>Layout coordination and build-ready drawing sets.</p>
-      </div>
-      <div class="card">
-        <img src="https://source.unsplash.com/600x400/?technical,drawing" alt="Sample CAD/Detail image">
-        <h3>Fabrication & Detailing</h3>
-        <p>Detail sheets and fabrication drawings for manufacturing or buildout.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="webdesign">
-    <h2>Web Design Projects</h2>
-    <div class="gallery">
-      <div class="card">
-        <img src="https://source.unsplash.com/600x400/?website,ui" alt="Sample Web UI">
-        <h3>Brand Landing Page</h3>
-        <p>Custom landing page built with clean layout and strong hierarchy.</p>
-      </div>
-      <div class="card">
-        <img src="https://source.unsplash.com/600x400/?coding,developer" alt="Sample Web Dev">
-        <h3>Modular Portfolio System</h3>
-        <p>Scalable portfolio framework for future projects.</p>
-      </div>
-      <div class="card">
-        <img src="https://source.unsplash.com/600x400/?web,design,creative" alt="Sample Web Design">
-        <h3>Client Story Microsite</h3>
-        <p>Purpose‑driven microsite with strong content flow and readability.</p>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer>
-  © <span id="year"></span> Cadaline — All rights reserved.
-</footer>
-
-<script src="script.js"></script>
+  <div class="title">Cadaline</div>
 </body>
 </html>
