@@ -37,7 +37,7 @@
 </body>
 </html>
 
-###Above creates Cadaline in middle and makes it a link###
+<!--Above creates Cadaline in middle and makes it a link.  -->
 
 
 
@@ -62,7 +62,22 @@
     background-color: #f5f5f5;
   }
 
-  /* Title already exists in your script, so not adding here */
+  /* Title is assumed to exist already in your page */
+  .title {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .title a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  .title a:hover {
+    color: #007BFF;
+  }
 
   /* Hamburger button */
   .hamburger {
@@ -116,18 +131,35 @@
 </head>
 <body>
 
+  <!-- Title (existing) -->
+  <div class="title">
+    <a href="https://cadaline.com" target="_blank">Cadaline</a>
+  </div>
+
   <!-- Hamburger button -->
   <button class="hamburger" id="hamburger">☰</button>
 
   <!-- Dropdown menu -->
   <div class="dropdown-menu" id="dropdownMenu">
-    <button>AutoCADD</button>
-    <button>WebDesign</button>
+    <button onclick="alert('Navigate to AutoCADD')">AutoCADD</button>
+    <button onclick="alert('Navigate to WebDesign')">WebDesign</button>
   </div>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const dropdownMenu = document.getElementById('dropdownMenu');
+
+  hamburger.addEventListener('click', () => {
+    dropdownMenu.classList.toggle('open');
+  });
+
+  // Optional: close menu if you click outside the buttons
+  dropdownMenu.addEventListener('click', (e) => {
+    if (e.target === dropdownMenu) {
+      dropdownMenu.classList.remove('open');
+    }
+  });
+</script>
 
 </body>
 </html>
-
-
-
-
