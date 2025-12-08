@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cadaline — Digital & Physical Spaces Designed</title>
+  <meta name="description" content="Cadaline: elegant, precise design for digital and physical spaces. Coming soon." />
+
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="shell">
+    <header class="topbar" role="banner">
+      <div class="topbar-inner">
+        <a class="brand" href="#home" aria-label="Cadaline home">
+          <div class="mark" aria-hidden="true"></div>
+          <div class="brand-title">
+            <b>Cadaline</b>
+            <span>Design that fits—on paper and in reality</span>
+          </div>
+        </a>
+
+        <div class="nav" aria-label="Primary navigation">
+          <div class="nav-label">Pages</div>
+          <div class="nav-wrap">
+            <select id="navSelect" class="nav-select" aria-label="Select page">
+              <option value="home">Home</option>
+              <option value="about">About Us</option>
+              <option value="autocadd">AutoCADD</option>
+              <option value="webdesign">WebDesign</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- HOME -->
+    <main id="home" class="page" role="main" aria-label="Home">
+      <section class="hero" aria-labelledby="tagline">
+        <div class="hero-media" role="img" aria-label="Large background image placeholder">
+          <div class="image-placeholder" aria-hidden="true">
+            <div class="tag">Background image placeholder</div>
+            <div style="font-size: 14px; color: rgba(243,245,255,.86); line-height: 1.6;">
+              Drop in a hero photograph or renders here (architecture, interiors, or brand visuals).
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-overlay" aria-hidden="true"></div>
+
+        <div class="hero-copy">
+          <div class="hero-inner">
+            <h1 id="tagline" class="tagline">Digital and Physical Spaces Designed</h1>
+            <p class="sub">coming soon</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ABOUT -->
+    <main id="about" class="page hide" role="main" aria-label="About Us">
+      <section class="section">
+        <div class="section-head">
+          <p class="kicker">About Us</p>
+          <h2 class="h2">Cadaline is where design meets precision.</h2>
+        </div>
+        <div class="section-body">
+          <p>
+            Cadaline grew from a simple obsession: making every line matter—whether it’s a floor plan that has
+            to resolve beautifully in the real world or a digital experience that needs to feel effortless
+            the moment someone lands on it.
+          </p>
+          <p>
+            We pair clean structure with thoughtful detail: clear intent, measurable decisions, and polished
+            execution that earns trust fast. If it needs to be built, documented, or launched—Cadaline
+            aligns the geometry, the craft, and the story so the end result reads as inevitable.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- AutoCADD -->
+    <main id="autocadd" class="page hide" role="main" aria-label="AutoCADD">
+      <section class="section">
+        <div class="section-head">
+          <p class="kicker">AutoCADD</p>
+          <h2 class="h2">Measured drawings that translate cleanly from concept to construction.</h2>
+        </div>
+        <div class="section-body">
+          <p>
+            This is the space for your CAD portfolio: plan sets, elevations, detail callouts, and
+            coordination drawings—formatted for clarity and ready to hand off to builders, vendors,
+            or permitting teams.
+          </p>
+
+          <div class="grid" aria-label="AutoCADD project gallery">
+            <article class="card">
+              <div class="card-media" role="img" aria-label="Project image placeholder"></div>
+              <div class="card-body">
+                <h3 class="card-title">Project Set — Residential Refresh</h3>
+                <p class="card-desc">
+                  Updated layouts, door/window schedules, and millwork notes—focused on flow, storage,
+                  and clean sightlines while keeping buildability front and center.
+                </p>
+                <div class="meta">Deliverables: plans • elevations • details • sheet assembly</div>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-media" role="img" aria-label="Project image placeholder"></div>
+              <div class="card-body">
+                <h3 class="card-title">Commercial Fit-Out Coordination</h3>
+                <p class="card-desc">
+                  Layered documentation that keeps trades aligned: clear constraints, orderly revisions,
+                  and a drawing set that stays readable under real project pressure.
+                </p>
+                <div class="meta">Focus: coordination • conventions • revision control</div>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-media" role="img" aria-label="Project image placeholder"></div>
+              <div class="card-body">
+                <h3 class="card-title">Detailing & Fabrication Pack</h3>
+                <p class="card-desc">
+                  Precision details that translate into confident fabrication—dimensions, joinery intent,
+                  and installation sequencing all documented with practical clarity.
+                </p>
+                <div class="meta">Output: detail sheets • cut lists • install notes</div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- WebDesign -->
+    <main id="webdesign" class="page hide" role="main" aria-label="WebDesign">
+      <section class="section">
+        <div class="section-head">
+          <p class="kicker">WebDesign</p>
+          <h2 class="h2">Elegant, fast experiences that feel custom—without feeling complicated.</h2>
+        </div>
+        <div class="section-body">
+          <p>
+            Here you can showcase web projects: brand systems, landing pages, and product sites built with
+            strong information architecture, crisp typography, and interactions that quietly guide the user.
+          </p>
+
+          <div class="grid" aria-label="WebDesign project gallery">
+            <article class="card">
+              <div class="card-media" role="img" aria-label="Website preview placeholder"></div>
+              <div class="card-body">
+                <h3 class="card-title">Brand Launch Landing</h3>
+                <p class="card-desc">
+                  A confident hero, clean hierarchy, and conversion-aware sections—built to make the first
+                  impression feel inevitable.
+                </p>
+                <div class="meta">Components: hero • story • proof • CTA</div>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-media" role="img" aria-label="Website preview placeholder"></div>
+              <div class="card-body">
+                <h3 class="card-title">Portfolio System (Modular)</h3>
+                <p class="card-desc">
+                  Reusable project cards, consistent spacing, and flexible galleries—so the site scales as
+                  your work grows.
+                </p>
+                <div class="meta">Strength: consistency • extensibility</div>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-media" role="img" aria-label="Website preview placeholder"></div>
+              <div class="card-body">
+                <h3 class="card-title">Client Story Microsite</h3>
+                <p class="card-desc">
+                  Narrative-first layout with visual rhythm: context, decisions, and outcomes—built for
+                  clarity on every screen size.
+                </p>
+                <div class="meta">Touchpoints: readability • accessibility</div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+      © <span id="year"></span> Cadaline — built for wherever your next project goes.
+    </footer>
+  </div>
+
+  <!-- Link JS -->
+  <script src="script.js"></script>
+</body>
+</html>
