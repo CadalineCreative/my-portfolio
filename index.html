@@ -13,7 +13,7 @@
   }
 
   .title {
-    font-size: 36px;       /* increased font size */
+    font-size: 42px;       /* increased font size */
     font-weight: bold;
     text-align: center;
     margin-top: 20px;       /* spacing from top of page */
@@ -163,3 +163,150 @@
 
 </body>
 </html>
+
+<!-- Made Hamburger button with links. -->
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cadaline</title>
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+  }
+
+  /* Full-page background */
+  body {
+    background: url('https://source.unsplash.com/1600x900/?architecture,interior,modern') no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  /* Overlay to darken background for readability */
+  body::before {
+    content: '';
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(10,14,23,0.6);
+    z-index:0;
+  }
+
+  /* Title */
+  .title {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+    position: relative;
+    z-index: 1; /* above overlay */
+  }
+
+  .title a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .title a:hover {
+    color: #8FA8FF;
+  }
+
+  /* Hamburger button */
+  .hamburger {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 2; /* above overlay */
+    color: #fff;
+  }
+
+  /* Dropdown menu overlay */
+  .dropdown-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(10,14,23,0.95);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: right 0.3s ease-in-out;
+    z-index: 1; 
+  }
+
+  .dropdown-menu.open {
+    right: 0;
+  }
+
+  .dropdown-menu button {
+    font-size: 30px;
+    padding: 20px 40px;
+    margin: 20px 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #000000;
+    transition: background-color 0.2s;
+  }
+
+  .dropdown-menu button:hover {
+    background-color: #007BFF;
+    color: #fff;
+  }
+</style>
+</head>
+<body>
+
+  <!-- Title -->
+  <div class="title">
+    <a href="https://cadaline.com" target="_blank">Cadaline</a>
+  </div>
+
+  <!-- Hamburger button -->
+  <button class="hamburger" id="hamburger">☰</button>
+
+  <!-- Dropdown menu -->
+  <div class="dropdown-menu" id="dropdownMenu">
+    <button onclick="alert('Navigate to AutoCADD')">AutoCADD</button>
+    <button onclick="alert('Navigate to WebDesign')">WebDesign</button>
+  </div>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const dropdownMenu = document.getElementById('dropdownMenu');
+
+  hamburger.addEventListener('click', () => {
+    dropdownMenu.classList.toggle('open');
+  });
+
+  // Close menu if click outside
+  dropdownMenu.addEventListener('click', (e) => {
+    if (e.target === dropdownMenu) {
+      dropdownMenu.classList.remove('open');
+    }
+  });
+</script>
+
+</body>
+</html>
+
